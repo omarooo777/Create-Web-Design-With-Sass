@@ -1,0 +1,14 @@
+// import header
+@use "./sass/layout/header" as *;
+
+// import global rules
+@use "./sass/components/global-ruls" as *;
+
+// import grid system
+@use "./sass/layout/grid" as *;
+
+// import home page
+@use "./sass/pages/homepage" as *;
+
+// import footer
+@use "./sass/layout/footer" as *;

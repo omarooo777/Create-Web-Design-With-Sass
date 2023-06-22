@@ -1,0 +1,15 @@
+// import mixins
+@use "./sass/helpers/mixins" as *;
+
+* {
+  @include prefixes(box-sizing, border-box, webkit moz);
+}
+
+body {
+  background-color: #f6f6f6;
+  font-family: tahoma;
+}
+
+html {
+  scroll-behavior: smooth;
+}

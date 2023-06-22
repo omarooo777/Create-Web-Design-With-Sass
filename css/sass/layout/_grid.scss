@@ -1,0 +1,22 @@
+// import mixins
+@use "./sass/helpers/mixins" as *;
+
+.container {
+  padding: {
+    left: 15px;
+    right: 15px;
+  }
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  @include smallS {
+    width: 750px;
+  }
+  @include mediumS {
+    width: 970px;
+  }
+  @include largeS {
+    width: 1170px;
+  }
+}
