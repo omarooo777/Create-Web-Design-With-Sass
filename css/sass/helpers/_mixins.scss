@@ -1,12 +1,6 @@
 // Media Query Mixins
-@mixin mobilS {
-  @media (max-width: 767px) {
-    @content;
-  }
-}
-
 @mixin smallS {
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (max-width: 991px) {
     @content;
   }
 }

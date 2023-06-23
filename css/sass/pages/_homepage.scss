@@ -3,3 +3,113 @@
 
 // import mixins
 @use "./sass/helpers/mixins" as *;
+
+/* Start Slider */
+.slider {
+  padding: 30px 0;
+  .quote {
+    font: {
+      style: italic;
+      size: 18px;
+      weight: bold;
+    }
+    line-height: 1.6;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+  .imgs {
+    margin-top: 30px;
+    text-align: center;
+    img {
+      max-width: 100%;
+      width: 680px;
+    }
+  }
+  .bullets {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 15px;
+    span {
+      width: 20px;
+      height: 20px;
+      background-color: $greyColor;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      cursor: pointer;
+      &.active {
+        border-color: #000;
+        background-color: #fff;
+      }
+    }
+  }
+}
+/* End Slider */
+/* Start Services */
+.serves {
+  padding: 50px 0;
+  .servecis-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: #5a5a5a;
+      i {
+        font-size: 40px;
+      }
+    }
+    .descreption-box {
+      line-height: 1.6;
+      color: #666;
+    }
+    .link {
+      color: $redColor;
+      font-weight: bold;
+    }
+  }
+}
+/* End Services */
+/* Start Team */
+.team {
+  .team-box {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    .title {
+      img {
+        max-width: 100%;
+      }
+      color: #666;
+      span {
+        font-weight: bold;
+      }
+    }
+    .descreption-box {
+      color: #777;
+      line-height: 1.6;
+    }
+    a {
+      color: $redColor;
+      font-weight: bold;
+    }
+  }
+}
+/* End Team */
+/* Start Lorem Ipsum */
+.lorem-ipsum {
+  padding: 50px 0;
+  .imgs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+/* End Lorem Ipsum */

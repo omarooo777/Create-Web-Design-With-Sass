@@ -10,9 +10,6 @@
     left: auto;
     right: auto;
   }
-  @include smallS {
-    width: 750px;
-  }
   @include mediumS {
     width: 970px;
   }

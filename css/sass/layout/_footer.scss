@@ -1,0 +1,69 @@
+// import variables
+@use "./sass/helpers/variables" as *;
+
+// import mixins
+@use "./sass/helpers/mixins" as *;
+
+/* Start Footer */
+footer {
+  background-color: #ddd;
+  overflow: hidden;
+  .container {
+    display: grid;
+    gap: 30px;
+    @include mediumS {
+      grid-template-columns: (100% / 3) (100% / 3) (100% / 3);
+    }
+    @include largeS {
+      grid-template-columns: (100% / 2) (100% / 4) (100% / 4);
+    }
+    .box {
+      @include largeS {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      h4 {
+        color: $redColor;
+      }
+      p {
+        color: #777;
+        line-height: 1.6;
+      }
+    }
+    .info ul {
+      color: #777;
+      span {
+        color: $redColor;
+        font-weight: bold;
+      }
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      input,
+      textarea {
+        border: none;
+        width: 230px;
+        margin: 10px 0;
+        padding: 10px;
+      }
+      textarea {
+        height: 100px;
+        resize: none;
+      }
+      button {
+        padding: 5px 8px;
+        border-radius: 6px;
+        background-color: $redColor;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+/* End Footer */
